@@ -15,7 +15,8 @@
 
 </head>
 
-<body id = " {{location}} ">
+<body id = >
+  {{location}}
   <input type="image" src="resources/climate_button.png" id="climate_button"/>
 
   <div class="modal" id="climate_modal">
@@ -40,7 +41,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <span class="close">&times;</span>
-        <h2>{{issues}}</h2>
+        <h2>{{info}}</h2>
       </div>
       <div class="modal-body">
           <p>
@@ -49,6 +50,10 @@
           </p>
       </div>
     </div>
+  </div>
+
+  <div>
+    <img src="resoures/IndiaText.png" id="location_text">
   </div>
 </body>
 

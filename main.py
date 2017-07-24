@@ -17,10 +17,18 @@
 import jinja2
 import os
 import webapp2
-from maps import MapLocation
+from maps import Info
+from maps import map_list
 
 env = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
+
+def constructBlogListHTML():
+    html_string = "<ol>\n"
+    for i in range(0, len(map_list)):
+        map_location = map_list[i]
+        html_string += "<li>" + map_location.listString(i) + "</li>"
+    html_string += "</ol>"
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
@@ -35,9 +43,11 @@ class PostHandler(webapp2.RequestHandler):
         template = env.get_template('templates/map.html')
         page_id = int(self.request.get('page_id'))
         map_location = map_list[page_id]
-        template_variables = {"title": map_location.title,
+        template_variables = {"location": map_location.location,
+                              "title": map_location.title,
                               "info": map_location.info,
-                              "content": map_location.content}
+                              "climate": map_location.climate,
+                              "issues": map_location.issues}
         self.response.out.write(template.render(template_variables))
 
 app = webapp2.WSGIApplication([
