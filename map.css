@@ -30,6 +30,60 @@ body .map {
   width: 100%;
 }
 
+
+
+
+#brazil {
+  line-height: 2;
+  color: #315068;
+  text-align: center;
+  background-image: url(Amazon.png);
+  /* background-color: pink; */
+  width: 100%;
+}
+
+
+#reef {
+  line-height: 2;
+  color: #315068;
+  text-align: center;
+  background-image: url(Reef.png);
+  /* background-color: pink; */
+  width: 100%;
+}
+
+
+#sahara{
+  line-height: 2;
+  color: #315068;
+  text-align: center;
+  background-image: url(Sahara.png);
+  /* background-color: pink; */
+  width: 100%;
+}
+
+
+
+
+#london {
+  line-height: 2;
+  color: #315068;
+  text-align: center;
+  background-image: url(London.png);
+  /* background-color: pink; */
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
 #location_text {
   margin-top: 250px;
 }
