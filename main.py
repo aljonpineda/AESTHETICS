@@ -47,7 +47,8 @@ class PostHandler(webapp2.RequestHandler):
                               "title": map_location.title,
                               "info": map_location.info,
                               "climate": map_location.climate,
-                              "issues": map_location.issues}
+                              "issues": map_location.issues,
+                              "bottomtext": map_location.bottomtext}
         self.response.out.write(template.render(template_variables))
 
 app = webapp2.WSGIApplication([
