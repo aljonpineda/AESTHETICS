@@ -6,7 +6,7 @@ function showModal(topic) {
   $("#" + topic + "_modal").animate({width: "toggle"});
 }
 
-function showEnvironmentModal() {
+function showIssuesModal() {
   showModal("environment");
 }
 
@@ -16,7 +16,7 @@ function showClimateModal() {
 
 
 function setup() {
-  $("#environment_button").click(showEnvironmentModal);
+  $("#issues_button").click(showIssuesModal);
   $("#climate_button").click(showClimateModal);
   $(".close").click(exitModal);
 }

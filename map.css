@@ -1,10 +1,12 @@
-body .map {
+body, .map {
   line-height: 2;
   font-family: Georgia, serif;
   padding: 100px;
   padding-top: 10px;
   color: #315068;
   text-align: center;
+  /* background-image: url(India.png); */
+  background-color: pink;
 }
 
 img {
@@ -14,6 +16,13 @@ img {
 
 table, th, td {
   border: 1px solid black;
+}
+
+p {
+  font-size: 14px;
+  overflow: auto;
+  text-indent: 20px;
+  text-align: left;
 }
 
 .icon {
@@ -60,17 +69,6 @@ a {
   left: 720px;
   z-index: 2;
   color: white;
-}
-
-#environment_button {
-  padding-left: 10px;
-}
-
-p {
-  font-size: 14px;
-  overflow: auto;
-  text-indent: 20px;
-  text-align: left;
 }
 
 .modal {
