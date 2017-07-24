@@ -23,13 +23,15 @@ body .map {
 
 #india {
   line-height: 2;
-  font-family: Georgia, serif;
-  padding: 100px;
-  padding-top: 10px;
   color: #315068;
   text-align: center;
-  /* background-image: url(India.png); */
-  background-color: pink;
+  background-image: url(India.png);
+  /* background-color: pink; */
+  width: 100%;
+}
+
+#location_text {
+  margin-top: 250px;
 }
 
 img {
