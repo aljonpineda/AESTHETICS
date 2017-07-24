@@ -1,4 +1,27 @@
-body, .map {
+/*
+body .map {
+  line-height: 2;
+  font-family: Georgia, serif;
+  padding: 100px;
+  padding-top: 10px;
+  color: #315068;
+  text-align: center;
+  /* background-image: url(India.png);
+  background-color: pink;
+}
+*/
+
+.map {
+  line-height: 2;
+  font-family: Georgia, serif;
+  padding: 100px;
+  padding-top: 10px;
+  color: #315068;
+  text-align: center;
+  background-color: pink;
+}
+
+#india {
   line-height: 2;
   font-family: Georgia, serif;
   padding: 100px;
