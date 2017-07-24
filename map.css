@@ -1,4 +1,4 @@
-.map {
+body .map {
   line-height: 2;
   font-family: Georgia, serif;
   padding: 100px;
@@ -6,17 +6,6 @@
   color: #315068;
   text-align: center;
 }
-
-#india {
-  line-height: 2;
-  font-family: Georgia, serif;
-  padding: 100px;
-  padding-top: 10px;
-  color: #315068;
-  text-align: center;
-  background-image: url(India.png);
-}
-
 
 img {
   position: relative;
@@ -34,35 +23,35 @@ a{
   color: white;
 }
 
-#brazil-icon {
+#brazil {
   top: 580px;
   left: 500px;
   z-index: 2;
   color: white;
 }
 
-#london-icon {
+#london {
   top: 355px;
   left: 690px;
   z-index: 2;
   color: white;
 }
 
-#delhi-icon {
+#delhi {
   top: 470px;
   left: 945px;
   z-index: 2;
   color: white;
 }
 
-#reef-icon {
+#reef {
   top: 615px;
   left: 1180px;
   z-index: 2;
   color: white;
 }
 
-#sahara-icon {
+#sahara {
   top: 480px;
   left: 720px;
   z-index: 2;
