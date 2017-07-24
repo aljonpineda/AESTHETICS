@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>{{title}}</title>
-    <link rel="stylesheet" href="map.css">
-  </head>
-  <body class = "map">
-      <!---{{content}}--->
-      <button id="myBtn">Info</button>
-      <div class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              <h2>{{info}}</h2>
-            </div>
-            <div class="modal-body">
-              {{content}}
-            </div>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="resources/map.css">
+
+<!--
+  <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+  </style>
+-->
+
+</head>
+
+<body id = " {{location}} ">
+  <input type="image" src="resources/climate_button.png" id="climate_button"/>
+
+  <div class="modal" id="climate_modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Climate</h2>
       </div>
-  </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="map.js"></script>
+      <div class="modal-body">
+          <p>
+            <!-- climate info goes here -->
+            {{climate}}
+          </p>
+
+      </div>
+    </div>
+  </div>
+
+  <input type="image" src="resources/issues_button.png" id="issues_button"/>
+
+  <div class="modal" id="environment_modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>{{issues}}</h2>
+      </div>
+      <div class="modal-body">
+          <p>
+            <!-- environmental issues info goes here -->
+          {{issues}}
+          </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="resources/map.js"></script>
+
 </html>
