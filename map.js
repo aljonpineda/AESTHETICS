@@ -1,19 +1,24 @@
 function exitModal() {
-  $(".modal").css({"display": 'none'})
+  $(".modal").css({"display": "none"})
 }
 
-function showModal() {
-  $(".modal").animate({width: 'toggle'});
+function showModal(topic) {
+  $("#" + topic + "_modal").animate({width: "toggle"});
 }
 
-function Modal() {
-  $("#myBtn").click(showModal);
+function showEnvironmentModal() {
+  showModal("environment");
+}
+
+function showClimateModal() {
+  showModal("climate");
+}
+
+
+function setup() {
+  $("#environment_button").click(showEnvironmentModal);
+  $("#climate_button").click(showClimateModal);
   $(".close").click(exitModal);
 }
 
-$(document).ready(Modal)
-
-
-
-
-$(document).ready(setupHandlers)
+$(document).ready(setup)
