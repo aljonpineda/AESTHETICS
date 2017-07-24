@@ -1,16 +1,3 @@
-/*
-body .map {
-  line-height: 2;
-  font-family: Georgia, serif;
-  padding: 100px;
-  padding-top: 10px;
-  color: #315068;
-  text-align: center;
-  /* background-image: url(India.png);
-  background-color: pink;
-}
-*/
-
 .map {
   line-height: 2;
   font-family: Georgia, serif;
@@ -21,19 +8,16 @@ body .map {
   background-color: pink;
 }
 
-#india {
+#India {
   line-height: 2;
   color: #315068;
   text-align: center;
   background-image: url(India.png);
-  /* background-color: pink; */
   width: 100%;
 }
 
 
-
-
-#brazil {
+#Brazil {
   line-height: 2;
   color: #315068;
   text-align: center;
@@ -43,7 +27,7 @@ body .map {
 }
 
 
-#reef {
+#Reef {
   line-height: 2;
   color: #315068;
   text-align: center;
@@ -53,7 +37,7 @@ body .map {
 }
 
 
-#sahara{
+#Sahara{
   line-height: 2;
   color: #315068;
   text-align: center;
@@ -63,9 +47,7 @@ body .map {
 }
 
 
-
-
-#london {
+#London {
   line-height: 2;
   color: #315068;
   text-align: center;
@@ -73,15 +55,6 @@ body .map {
   /* background-color: pink; */
   width: 100%;
 }
-
-
-
-
-
-
-
-
-
 
 
 #location_text {
@@ -110,44 +83,50 @@ p {
   color: white;
 }
 
-a {
+a{
   text-decoration: none;
   color: white;
 }
 
-#brazil {
+#brazil-icon {
   top: 580px;
   left: 500px;
   z-index: 2;
   color: white;
 }
 
-#london {
+#london-icon {
   top: 355px;
   left: 690px;
   z-index: 2;
   color: white;
 }
 
-#delhi {
+#delhi-icon {
   top: 470px;
   left: 945px;
   z-index: 2;
   color: white;
 }
 
-#reef {
+#reef-icon {
   top: 615px;
   left: 1180px;
   z-index: 2;
   color: white;
 }
 
-#sahara {
+#sahara-icon {
   top: 480px;
   left: 720px;
   z-index: 2;
   color: white;
+}
+
+p {
+  font-size: 14px;
+  overflow: auto;
+  text-indent: 20px;
 }
 
 .modal {
@@ -184,8 +163,6 @@ a {
 
 .modal-body {
   padding: 2px 16px;
-  max-height: calc(100vh - 210px);
-  overflow-y: auto;
 }
 
 /* The Close Button */
