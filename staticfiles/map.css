@@ -2,7 +2,7 @@
     font-family: Drugs;
     src: url(Drugs.otf);
 }
-@font-face {
+@font-face{
     font-family: Helvetica;
     src: url(Helvetica.dfont);
 }
@@ -41,7 +41,6 @@
 
 body {
   background-color: black;
-  width: 100%;
 }
 
 img {
@@ -50,8 +49,11 @@ img {
   text-align: center;
 }
 
+
 h2 {
   margin: 2px;
+  color: white;
+  text-align: center;
 }
 
 p {
@@ -210,4 +212,16 @@ p {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.submissions {
+  color: white;
+}
+
+form{
+  color: white;
+  font-family: Drugs;
+  line-height: 2;
+  text-decoration: none;
+
 }
