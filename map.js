@@ -16,9 +16,21 @@ function showClimateModal() {
 
 
 function setup() {
-  $("#issues_button").click(showIssuesModal);
-  $("#climate_button").click(showClimateModal);
+  $("#issuesbutton").click(showIssuesModal);
+  $("#climatebutton").click(showClimateModal);
   $(".close").click(exitModal);
+  $(document).click(handleDocumentClick);
+}
+
+function handleDocumentClick(event){
+    var modalBox = $(".modal-content").get(0);
+    var climateButton = $("#climatebutton").get(0);
+    var issuesButton = $("#issuesbutton").get(0);
+    if (!modalBox.contains(event.target)&&
+        climateButton != event.target &&
+        issuesButton != event.target) {
+      exitModal();
+    }
 }
 
 $(document).ready(setup)
