@@ -7,19 +7,87 @@
     src: url(Helvetica.dfont);
 }
 
-
-
-
-
-
-.map {
-  line-height: 2;
-  font-family: Georgia, serif;
-  padding: 100px;
-  padding-top: 10px;
-  color: #315068;
+img {
+  position: relative;
+  overflow: scroll;
   text-align: center;
-  background-color: pink;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.text {
+  width: 100%;
+}
+
+h1 {
+  position: absolute;
+  z-index: 1;
+  color: grey;
+  top: 120%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+p {
+  font-size: 14px;
+  overflow: auto;
+  text-indent: 20px;
+  text-align: left;
+}
+
+.icon {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#brazil-icon {
+  top: 560px;
+  left: 500px;
+  z-index: 2;
+  color: white;
+}
+
+#london-icon {
+  top: 335px;
+  left: 690px;
+  z-index: 2;
+  color: white;
+}
+
+#delhi-icon {
+  top: 450px;
+  left: 945px;
+  z-index: 2;
+  color: white;
+}
+
+#reef-icon {
+  top: 595px;
+  left: 1180px;
+  z-index: 2;
+  color: white;
+}
+
+#sahara-icon {
+  top: 460px;
+  left: 720px;
+  z-index: 2;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  overflow: auto;
+  text-indent: 20px;
 }
 
 #India {
@@ -75,74 +143,6 @@
   margin-top: 250px;
 }
 
-img {
-  position: relative;
-  overflow: scroll;
-}
-
-table, th, td {
-  border: 1px solid black;
-}
-
-p {
-  font-size: 14px;
-  overflow: auto;
-  text-indent: 20px;
-  text-align: left;
-}
-
-.icon {
-  position: absolute;
-  text-decoration: none;
-  color: white;
-}
-
-a{
-  text-decoration: none;
-  color: white;
-}
-
-#brazil-icon {
-  top: 580px;
-  left: 500px;
-  z-index: 2;
-  color: white;
-}
-
-#london-icon {
-  top: 355px;
-  left: 690px;
-  z-index: 2;
-  color: white;
-}
-
-#delhi-icon {
-  top: 470px;
-  left: 945px;
-  z-index: 2;
-  color: white;
-}
-
-#reef-icon {
-  top: 615px;
-  left: 1180px;
-  z-index: 2;
-  color: white;
-}
-
-#sahara-icon {
-  top: 480px;
-  left: 720px;
-  z-index: 2;
-  color: white;
-}
-
-p {
-  font-size: 14px;
-  overflow: auto;
-  text-indent: 20px;
-}
-
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -155,20 +155,18 @@ p {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4);*// /* Black w/ opacity */
-
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 .modal-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
-    padding: 0;
+    padding: 30px;
     border: 1px solid #888;
-    width: 80%;
+    width: 90%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     font-family: Helvetica;
-
 }
 
 /* Modal Content/Box */
@@ -182,7 +180,7 @@ p {
 }
 
 .modal-body {
-  padding: 2px 16px;
+    padding: 2px 16px;
 }
 
 /* The Close Button */
