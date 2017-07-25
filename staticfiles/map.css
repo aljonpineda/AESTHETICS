@@ -6,6 +6,10 @@
     font-family: Helvetica;
     src: url(Helvetica.dfont);
 }
+@font-face{
+    font-family: LinLibertine;
+    src: url(LinLibertine_R.ttf);
+}
 
 .navigation {
   background-color: transparent;
@@ -213,9 +217,10 @@ form{
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
   overflow: auto;
   text-indent: 20px;
   text-align: left;
-  color: #00173d;
+  color: black;
+  font-family: LinLibertine;
 }
