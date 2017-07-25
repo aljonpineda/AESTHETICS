@@ -2,7 +2,7 @@
     font-family: Drugs;
     src: url(Drugs.otf);
 }
-@font-face{
+@font-face {
     font-family: Helvetica;
     src: url(Helvetica.dfont);
 }
@@ -41,6 +41,7 @@
 
 body {
   background-color: black;
+  width: 100%;
 }
 
 img {
@@ -50,13 +51,10 @@ img {
 }
 
 h1 {
-  position: absolute;
   z-index: 1;
   color: grey;
-  bottom: -20px;
-  width: : 100%;
-  text-align: center;
   font-family: Drugs;
+  text-align: center;
   letter-spacing: 2px;
 }
 
@@ -75,6 +73,7 @@ p {
 .icon {
   position: absolute;
   text-decoration: none;
+  z-index: 2;
   color: white;
 }
 
@@ -86,43 +85,31 @@ a{
 #brazil-icon {
   top: 590px;
   left: 500px;
-  z-index: 2;
-  color: white;
 }
 
 #london-icon {
   top: 365px;
   left: 690px;
-  z-index: 2;
-  color: white;
 }
 
 #delhi-icon {
   top: 480px;
   left: 945px;
-  z-index: 2;
-  color: white;
 }
 
 #reef-icon {
   top: 615px;
   left: 1180px;
-  z-index: 2;
-  color: white;
 }
 
 #sahara-icon {
   top: 490px;
   left: 720px;
-  z-index: 2;
-  color: white;
 }
 
 #arctic-icon {
   top: 100px;
   left: 690px;
-  z-index: 2;
-  color: white;
 }
 
 p {
@@ -131,56 +118,39 @@ p {
   text-indent: 20px;
 }
 
-#India {
+.location_map {
   line-height: 2;
   color: #315068;
   text-align: center;
-  background-image: url(India.png);
   width: 100%;
+}
+
+#India {
+  background-image: url(India.png);
 }
 
 
 #Amazon {
-  line-height: 2;
-  color: #315068;
-  text-align: center;
   background-image: url(Amazon.png);
-  width: 100%;
 }
 
 
 #Reef {
-  line-height: 2;
-  color: #315068;
-  text-align: center;
   background-image: url(Reef.png);
-  width: 100%;
 }
 
 
-#Sahara{
-  line-height: 2;
-  color: #315068;
-  text-align: center;
+#Sahara {
   background-image: url(Sahara.png);
-  width: 100%;
 }
 
 
 #London {
-  line-height: 2;
-  color: #315068;
-  text-align: center;
   background-image: url(London.png);
-  width: 100%;
 }
 
 #Arctic {
-  line-height: 2;
-  color: #315068;
-  text-align: center;
   background-image: url(Arctic.png);
-  width: 100%;
 }
 
 #location_text {
