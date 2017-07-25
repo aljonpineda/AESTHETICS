@@ -16,8 +16,8 @@ function showClimateModal() {
 
 
 function setup() {
-  $("#issues_button").click(showIssuesModal);
-  $("#climate_button").click(showClimateModal);
+  $("#issuesbutton").click(showIssuesModal);
+  $("#climatebutton").click(showClimateModal);
   $(".close").click(exitModal);
 }
 
