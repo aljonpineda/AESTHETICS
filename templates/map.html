@@ -16,8 +16,10 @@
 </head>
 
 <body {{location}}>
-  <input type="image" src="resources/climate_button.png" id="climate_button"/>
-
+  <div>
+    {{bottomtext}}
+  </div>
+  <input type="image" class="button" src="resources/climatebutton.png" id="climatebutton"/>
   <div class="modal" id="climate_modal">
     <div class="modal-content">
       <div class="modal-header">
@@ -34,12 +36,12 @@
     </div>
   </div>
 
-  <input type="image" src="resources/issues_button.png" id="issues_button"/>
+  <input type="image" class="button" src="resources/issuesbutton.png" id="issuesbutton"/>
 
   <div class="modal" id="environment_modal">
     <div class="modal-content">
+      <span class="close">&times;</span>
       <div class="modal-header">
-        <span class="close">&times;</span>
         <h2>{{info}}</h2>
       </div>
       <div class="modal-body">
@@ -49,10 +51,6 @@
           </p>
       </div>
     </div>
-  </div>
-
-  <div>
-    <img src="resoures/IndiaText.png" id="location_text">
   </div>
 </body>
 
