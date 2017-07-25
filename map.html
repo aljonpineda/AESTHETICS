@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="resources/map.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <div class = "navigation" id="bar">
+    <a href="/">HOME</a>
+    <a href="submissions.html">SUBMIT YOUR OWN IDEA</a>
+  </div>
+</head>
+
+
+<body {{location}}>
+  <div>
+    {{bottomtext}}
+  </div>
+  <input type="image" class="button" src="resources/climatebutton.png" id="climatebutton"/>
+  <div class="modal" id="climate_modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Climate</h2>
+      </div>
+      <div class="modal-body">
+          <p>
+            <!-- climate info goes here -->
+            {{climate}}
+          </p>
+
+      </div>
+    </div>
+  </div>
+
+  <input type="image" class="button" src="resources/issuesbutton.png" id="issuesbutton"/>
+
+  <div class="modal" id="environment_modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-header">
+        <h2>{{info}}</h2>
+      </div>
+      <div class="modal-body">
+          <p>
+            <!-- environmental issues info goes here -->
+          {{issues}}
+          </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="resources/map.js"></script>
+
+</html>

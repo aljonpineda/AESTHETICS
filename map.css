@@ -1,0 +1,248 @@
+@font-face {
+    font-family: Drugs;
+    src: url(Drugs.otf);
+}
+@font-face{
+    font-family: Helvetica;
+    src: url(Helvetica.dfont);
+}
+
+.navigation {
+  background-color: transparent;
+  overflow: hidden;
+  font-family: Drugs;
+  font-weight: 600;
+  border-color: black;
+  border-width: 1px;
+}
+
+.navigation a {
+  float: left;
+  display: block;
+  list-style: none;
+  text-align: center;
+  font-size: 11px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin: 5px;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.navigation a:hover {
+  font-weight: bold;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+body {
+  background-color: black;
+}
+
+img {
+  position: relative;
+  overflow: scroll;
+  text-align: center;
+}
+
+h1 {
+  position: absolute;
+  z-index: 1;
+  color: grey;
+  bottom: -20px;
+  width: : 100%;
+  text-align: center;
+  font-family: Drugs;
+  letter-spacing: 2px;
+
+}
+
+p {
+  font-size: 14px;
+  overflow: auto;
+  text-indent: 20px;
+  text-align: left;
+  color: #00173d;
+}
+
+.icon {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#brazil-icon {
+  top: 590px;
+  left: 500px;
+  z-index: 2;
+  color: white;
+}
+
+#london-icon {
+  top: 365px;
+  left: 690px;
+  z-index: 2;
+  color: white;
+}
+
+#delhi-icon {
+  top: 480px;
+  left: 945px;
+  z-index: 2;
+  color: white;
+}
+
+#reef-icon {
+  top: 615px;
+  left: 1180px;
+  z-index: 2;
+  color: white;
+}
+
+#sahara-icon {
+  top: 490px;
+  left: 720px;
+  z-index: 2;
+  color: white;
+}
+
+#arctic-icon {
+  top: 100px;
+  left: 690px;
+  z-index: 2;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  overflow: auto;
+  text-indent: 20px;
+}
+
+#India {
+  line-height: 2;
+  color: #315068;
+  text-align: center;
+  background-image: url(India.png);
+  width: 100%;
+}
+
+
+#Amazon {
+  line-height: 2;
+  color: #315068;
+  text-align: center;
+  background-image: url(Amazon.png);
+  width: 100%;
+}
+
+
+#Reef {
+  line-height: 2;
+  color: #315068;
+  text-align: center;
+  background-image: url(Reef.png);
+  width: 100%;
+}
+
+
+#Sahara{
+  line-height: 2;
+  color: #315068;
+  text-align: center;
+  background-image: url(Sahara.png);
+  width: 100%;
+}
+
+
+#London {
+  line-height: 2;
+  color: #315068;
+  text-align: center;
+  background-image: url(London.png);
+  width: 100%;
+}
+
+#Arctic {
+  line-height: 2;
+  color: #315068;
+  text-align: center;
+  background-image: url(Arctic.png);
+  width: 100%;
+}
+
+#location_text {
+  margin-top: 10px;
+}
+
+.button {
+  margin-top: 450px;
+  width: 20em;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    padding-bottom: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+.modal-content {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.7);;
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+    height: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.2);
+    font-family: Lucida;
+    overflow: auto;
+}
+
+/* Modal Content/Box */
+.modal-header {
+    padding: 2px 16px;
+    background-color: rgba(120, 120, 120, 0.2);;
+    color: white;
+    font-family: Drugs;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
