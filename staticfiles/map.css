@@ -7,24 +7,61 @@
     src: url(Helvetica.dfont);
 }
 
+.navigation {
+  background-color: transparent;
+  overflow: hidden;
+  font-family: Drugs;
+  font-weight: 600;
+  border-color: black;
+  border-width: 1px;
+}
+
+.navigation a {
+  float: left;
+  display: block;
+  list-style: none;
+  text-align: center;
+  font-size: 11px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin: 5px;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.navigation a:hover {
+  font-weight: bold;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+body {
+  background-color: black;
+}
+
 img {
   position: relative;
   overflow: scroll;
   text-align: center;
 }
 
-.text {
-  width: 100%;
-}
-
 h1 {
   position: absolute;
   z-index: 1;
   color: grey;
-  top: 120%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
+  bottom: -20px;
+  width: : 100%;
+  text-align: center;
+  font-family: Drugs;
+  letter-spacing: 2px;
+}
+
+h2 {
+  margin: 2px;
 }
 
 p {
@@ -47,35 +84,35 @@ a{
 }
 
 #brazil-icon {
-  top: 560px;
+  top: 590px;
   left: 500px;
   z-index: 2;
   color: white;
 }
 
 #london-icon {
-  top: 335px;
+  top: 365px;
   left: 690px;
   z-index: 2;
   color: white;
 }
 
 #delhi-icon {
-  top: 450px;
+  top: 480px;
   left: 945px;
   z-index: 2;
   color: white;
 }
 
 #reef-icon {
-  top: 595px;
+  top: 615px;
   left: 1180px;
   z-index: 2;
   color: white;
 }
 
 #sahara-icon {
-  top: 460px;
+  top: 490px;
   left: 720px;
   z-index: 2;
   color: white;
@@ -175,27 +212,27 @@ p {
     position: relative;
     background-color: rgba(255, 255, 255, 0.7);;
     margin: auto;
-    padding: 30px;
-    border: 0px;
+    border: 30px solid transparent;
     width: 90%;
     height: 50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.2);
-    font-family: Helvetica;
+    font-family: Lucida;
     overflow: auto;
 }
 
 /* Modal Content/Box */
 .modal-header {
-    padding: 2px 16px;
+    padding: 2px 2px;
     background-color: rgba(120, 120, 120, 0.2);;
     color: white;
     font-family: Drugs;
+    font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
 
 .modal-body {
-    padding: 2px 16px;
+    padding: 2px 2px;
 }
 
 /* The Close Button */

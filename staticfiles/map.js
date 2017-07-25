@@ -27,8 +27,8 @@ function handleDocumentClick(event){
     var climateButton = $("#climatebutton").get(0);
     var issuesButton = $("#issuesbutton").get(0);
     if (!modalBox.contains(event.target)&&
-        climateButton != event.target &&
-        issuesButton != event.target) {
+        issuesButton != event.target &&
+        climateButton != event.target) {
       exitModal();
     }
 }
