@@ -81,6 +81,13 @@ a{
   color: white;
 }
 
+#arctic-icon {
+  top: 100px;
+  left: 690px;
+  z-index: 2;
+  color: white;
+}
+
 p {
   font-size: 14px;
   overflow: auto;
@@ -128,6 +135,14 @@ p {
   color: #315068;
   text-align: center;
   background-image: url(London.png);
+  width: 100%;
+}
+
+#Arctic {
+  line-height: 2;
+  color: #315068;
+  text-align: center;
+  background-image: url(Arctic.png);
   width: 100%;
 }
 
