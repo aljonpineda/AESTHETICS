@@ -1,3 +1,17 @@
+@font-face {
+    font-family: Drugs;
+    src: url(Drugs.otf);
+}
+@font-face{
+    font-family: Helvetica;
+    src: url(Helvetica.dfont);
+}
+
+
+
+
+
+
 .map {
   line-height: 2;
   font-family: Georgia, serif;
@@ -141,7 +155,8 @@ p {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.4);*// /* Black w/ opacity */
+
 }
 
 .modal-content {
@@ -152,6 +167,8 @@ p {
     border: 1px solid #888;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: Helvetica;
+
 }
 
 /* Modal Content/Box */
@@ -159,6 +176,9 @@ p {
     padding: 2px 16px;
     background-color: grey;
     color: white;
+    font-family: Drugs;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .modal-body {
