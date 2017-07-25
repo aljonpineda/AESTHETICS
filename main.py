@@ -55,6 +55,17 @@ class SecondHandler(webapp2.RequestHandler):
     def get(self):
         template = env.get_template('templates/submissions.html')
         self.response.out.write(template.render())
+    def post(self):
+        template = env.get_template('templates/results.html')
+        template_variables = {"name": self.request.get("user"),
+                              "email": self.request.get("email"),
+                              "location": self.request.get("location"),
+                              "climate": self.request.get("climate_submission"),
+                              "issue": self.request.get("issue_submission")
+        }
+        self.response.out.write(template.render(template_variables))
+
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),

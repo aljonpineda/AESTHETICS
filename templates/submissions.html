@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Submissions</title>
-    <link rel="stylesheet" href="resources/map.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <div class = "navigation" id="bar">
-      <a href="/">HOME</a>
-      <a href="/submissions">SUBMIT YOUR OWN IDEA</a>
-    </div>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Submissions</title>
+  <link rel="stylesheet" href="resources/map.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <div class = "navigation" id="bar">
+    <a href="/">HOME</a>
+    <a href="/submissions">SUBMIT AN IDEA</a>
+  </div>
+</head>
   <body background = 'resources/Submit.png' >
     <div style="text-align: center;">
       <div style="display: inline-block; text-align: left">
-        <form class='submissions'>
+        <form method = 'post' class='submissions'>
           <h2>Help us out!</h2>
             Submit your own environmental issues and help increase awareness about the environmental dangers our planet is facing.
+<<<<<<< HEAD
             <div id="form_box_container">
               <div id="form_box">
-                <br>Name: <input type="text" name = "username" class="input" id="username"><br>
+                <br>Name: <input type="text" name = "user" class="input" id="username"><br>
+=======
+            <div style="text-align: center;">
+              <div style="display: inline-block; text-align: left">
+                <br>Name: <input type="text" name = "user" class="input" id="username"><br>
+>>>>>>> fa9e7320b999cbd528cb0a52c93231c1a7029695
                 Email: <input type="text" name = "email" class="input" id="email"><br>
                 Location: <input type="text" name = "location" class="input" id="location"><br>
-                Climate: <br> <textarea name="climatesubmission" class="input" id="climatesubmission" placeholder = "Enter text here..."></textarea><br>
-                Environmental Issue: <br> <textarea name="issuesubmission" class="input" id="issuesubmission" placeholder = "Enter text here..."></textarea>
+                Climate: <br> <textarea name="climate_submission" class="input" id="climate_submission" placeholder = "Enter text here..."></textarea><br>
+                Environmental Issue: <br> <textarea name="issue_submission" class="input" id="issue_submission" placeholder = "Enter text here..."></textarea>
                 <br><input type="submit" id="ok_button" value="Submit for Review">
               </div>
             </div>
         </form>
-
-
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="resources/map.js"></script>
