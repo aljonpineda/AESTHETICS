@@ -51,7 +51,13 @@ class PostHandler(webapp2.RequestHandler):
                               "bottomtext": map_location.bottomtext}
         self.response.out.write(template.render(template_variables))
 
+class SecondHandler(webapp2.RequestHandler):
+    def get(self):
+        template = env.get_template('templates/submissions.html')
+        self.response.out.write(template.render())
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
-    ('/map', PostHandler)
+    ('/map', PostHandler),
+    ('/submissions', SecondHandler)
 ], debug=True)
