@@ -56,14 +56,6 @@ h2 {
   text-align: center;
 }
 
-p {
-  font-size: 14px;
-  overflow: auto;
-  text-indent: 20px;
-  text-align: left;
-  color: #00173d;
-}
-
 .icon {
   position: absolute;
   text-decoration: none;
@@ -104,12 +96,6 @@ a{
 #arctic-icon {
   top: 100px;
   left: 690px;
-}
-
-p {
-  font-size: 14px;
-  overflow: auto;
-  text-indent: 20px;
 }
 
 .location_map {
@@ -224,4 +210,12 @@ form{
   line-height: 2;
   text-decoration: none;
 
+}
+
+p {
+  font-size: 20px;
+  overflow: auto;
+  text-indent: 20px;
+  text-align: left;
+  color: #00173d;
 }
