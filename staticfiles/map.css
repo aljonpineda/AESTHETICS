@@ -137,6 +137,10 @@ a{
   background-image: url(Arctic.png);
 }
 
+#Pacific {
+  background-image: url(Pacific.png);
+}
+
 #location_text {
   margin-top: 10px;
 }
