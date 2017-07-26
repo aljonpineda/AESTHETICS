@@ -9,6 +9,11 @@ class userSubmission(ndb.Model):
     issue = ndb.StringProperty()
     date = ndb.StringProperty()
 
+class contactUs(ndb.Model):
+    name = ndb.StringProperty()
+    email = ndb.StringProperty()
+    message = ndb.StringProperty()
+    date = ndb.StringProperty()
 
 class Info(ndb.Model):
     def __init__(self, location, title, info, climate, issues, bottomtext):

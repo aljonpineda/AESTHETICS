@@ -20,6 +20,7 @@ import webapp2
 from maps import Info
 from maps import map_list
 from maps import userSubmission
+from maps import contactUs
 import datetime
 
 
@@ -93,12 +94,13 @@ class ThirdHandler(webapp2.RequestHandler):
         self.response.out.write(template.render())
     def post(self):
         template = env.get_template('templates/results.html')
-        template_variables = {"name": self.request.get("user"),
-                              "email": self.request.get("email"),
-                              "message": self.request.get("message"),
-                              "result": "contact"
-        }
+        template_variables = {"result": "contact"}
         self.response.out.write(template.render(template_variables))
+        response = contactUs(name = self.request.get('user'),
+                            email = self.request.get("email"),
+                            message = self.request.get("message"),
+                            date=datetime.datetime.utcnow().strftime("%a %b %d "))
+        response.put()
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
