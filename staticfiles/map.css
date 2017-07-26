@@ -12,30 +12,37 @@
 }
 
 .navigation {
+  list-style-type: none;
   background-color: transparent;
   overflow: hidden;
   font-family: Drugs;
   font-weight: 600;
   border-color: black;
   border-width: 1px;
+  margin: 0;
+  padding: 0;
 }
 
-.navigation a {
+.navigation li a {
   float: left;
   display: block;
   list-style: none;
   text-align: center;
   font-size: 11px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  margin: 5px;
+  padding: 20px 20px;
   text-decoration: none;
   letter-spacing: 2px;
+  transition-duration: 0.4s;
+}
+
+.navigation li a:hover {
+  background-color: white;
+  color: black;
 }
 
 body {
   background-color: black;
+  margin-top: 0px;
 }
 
 img {
@@ -325,7 +332,7 @@ input[type=submit] {
   margin-top: 10px;
   font-family: Drugs;
   font-weight: bold;
-  background-color:
+  background-color: rgba(225,225,225,0.95);
 }
 
 input[type=submit]:hover {

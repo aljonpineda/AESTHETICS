@@ -11,11 +11,11 @@
     {% endif %}
     <link rel="stylesheet" href="resources/map.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <div class = "navigation" id="bar">
-      <a href="/">HOME</a>
-      <a href="/submissions">SUBMIT AN IDEA</a>
-      <a href="/cactus">CONTACT US</a>
-    </div>
+    <ul class = "navigation" id="bar">
+      <li><a href="/">HOME</a></li>
+      <li><a href="/submissions">SUBMIT AN IDEA</a></li>
+      <li><a href="/cactus">CONTACT US</a></li>
+    </ul>
   </head>
 
   {% if result == "submission" %}
@@ -27,7 +27,7 @@
             It will be reviewed in the next 24 hours. You will receive an email if we decide to include your submission on our website.
             <div style="text-align: center;">
               <div style="display: inline-block; text-align: left">
-                by {{name}}<br>
+                {{name}}<br>
                 {{location}}<br>
                 {{climate}}<br>
                 {{issue}}<br>
