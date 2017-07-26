@@ -34,12 +34,10 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         template = env.get_template('templates/index.html')
         self.response.out.write(template.render())
-    #def post(self):
-        #get data out of json object
 
 class PostHandler(webapp2.RequestHandler):
     def get(self):
-        # This creates and serves the blog post page
+        # This creates and serves the map page
         template = env.get_template('templates/map.html')
         page_id = int(self.request.get('page_id'))
         map_location = map_list[page_id]
