@@ -36,3 +36,15 @@ function setup() {
 
 
 $(document).ready(setup)
+
+
+function setupTooltips(){
+  $(".icon").mouseover(function() {
+    $(this).children(".icontext").show();
+}).mouseout(function() {
+    $(this).children(".icontext").hide();
+});
+}
+
+
+$(document).ready(setupTooltips)
