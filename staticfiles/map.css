@@ -103,6 +103,10 @@ a{
   color: white;
 }
 
+.material-icons:hover {
+  filter: drop-shadow(0px 10px 4px rgba(0,0,0,0.75)); 
+}
+
 #brazil-icon {
   top: 590px;
   left: 500px;
