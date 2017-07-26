@@ -19,6 +19,9 @@ import os
 import webapp2
 from maps import Info
 from maps import map_list
+from maps import userSubmission
+import datetime
+
 
 env = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
@@ -62,6 +65,26 @@ class SecondHandler(webapp2.RequestHandler):
                               "issue": self.request.get("issue_submission")
         }
         self.response.out.write(template.render(template_variables))
+        idea = userSubmission(  name = self.request.get("user"),
+                            email = self.request.get("email"),
+                            location = self.request.get("location"),
+                            climate = self.request.get("climate_submission"),
+                            issue = self.request.get("issue_submission"),
+                            date=datetime.datetime.utcnow().strftime("%a %b %d "))
+
+        idea.put()
+        self.reviewSubmissions()
+
+    def reviewSubmissions(self):
+        user_idea = userSubmission.query().order(userSubmission.date).fetch()
+
+        for idea in user_idea:
+            self.response.write(""" <div style="text-align: center;">
+            <div style="display: inline-block; text-align: left"><p id='name'>"""+ idea.name + " said...</p>")
+            self.response.write("<p>"+ idea.location + "</p>")
+            self.response.write("<p>"+ idea.climate + "</p>")
+            self.response.write("<p>"+ idea.issue + "</p>")
+            self.response.write("<em><p id='date'>submitted on " + str(idea.date)+"</p></em>"+"""<hr></div></div>""")
 
 
 

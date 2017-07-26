@@ -1,4 +1,14 @@
 from google.appengine.ext import ndb
+from datetime import datetime
+
+class userSubmission(ndb.Model):
+    name = ndb.StringProperty()
+    email = ndb.StringProperty()
+    location = ndb.StringProperty()
+    climate = ndb.StringProperty()
+    issue = ndb.StringProperty()
+    date = ndb.StringProperty()
+
 
 class Info(ndb.Model):
     def __init__(self, location, title, info, climate, issues, bottomtext):
@@ -17,8 +27,7 @@ map_list = [
     "Deforestation",
     """The Amazon Rainforest resides in a tropical climate, essentially meaning it is hot and humid in nature. The temperature of the Amazon Rainforest has little variation throughout the year. Temperatures usually range between 26 and 31 degrees celsius. On extreme occasions however, temperatures can get as high as 33 degrees celsius. Temperatures mainly stayed reasonable however, due to immensely high humidity, those foreign to the environment can feel like they are being deprived of air. Rainfall is an intrinsic characteristic to the Amazon Rainforest. Throughout the year data yield results with extreme variability in rainfall. Normally, from December to May, rain is plentiful garnering between 220- 320 mm of rainfall. During June to around November however, rainfall can decrease to only about 50 mm of rain. If you are a tourist, you may want to consider going between May and July in order to experience both spectrums of the Amazon Rain Forest. Some note a change in the recent climate of the Amazon. They blame it on excessive deforestation suffering its worst drought in over 100 years back in 2005. If the trend continues, more trees will be cut down for raw materials which leads to carbon dioxide emission due to dying plants. As a result the entire landscape, in terms of climate, would change.""",
     """Rainforests around the world, and the Amazon Rainforest in particular, face a plethora of issues that inhibit them from keeping their natural integrity. One may believe that the only issue that plagues the forest is deforestation. But factors such as greed and the need to monetize of raw materials set a chain reaction for destruction. Many trees are harvested in order for the gain of raw materials present in furniture and building materials and as a result, there is no foundation to hold dirt which kills fish via suffocation. As a result of greed, people from foreign nations illegally steal exotic wildlife and organisms in hopes of making a profit, thus endangering the vast biodiversity of the rainforest. Another issue of overfishing, where unneeded amounts of fish are brought to the market in over-commercialization. As a result, excess spoilage of fish occurs. According to 'RainforestCruises.com,' over 60 percent of fish are lost due to this terrible practice.""",
-    """<img src="resources/AmazonText.png" id="location_text">"""
-    ),
+    """<img src="resources/AmazonText.png" id="location_text">"""),
 
     Info("id = 'India'",
     "Delhi, India",
