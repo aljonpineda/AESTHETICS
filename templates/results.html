@@ -2,7 +2,13 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Submissions</title>
+    {% if result == "submission" %}
+      <title>Submissions</title>
+    {% endif %}
+
+    {% if result == "contact" %}
+      <title>Contact Us</title>
+    {% endif %}
     <link rel="stylesheet" href="resources/map.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <div class = "navigation" id="bar">
@@ -11,6 +17,8 @@
       <a href="/cactus">CONTACT US</a>
     </div>
   </head>
+
+  {% if result == "submission" %}
   <body background = 'resources/ThankYou.png' >
     <div style="text-align: center;">
       <div style="display: inline-block; text-align: left">
@@ -30,6 +38,16 @@
 
 
   </body>
+  {% endif %}
+
+  {% if result == "contact" %}
+  <body background = 'resources/ThankYou.png'>
+    <form class='submissions'>
+      <h2>Thank you for contacting us!</h2>
+    </form>
+  </body>
+  {% endif %}
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="resources/map.js"></script>
 </html>
