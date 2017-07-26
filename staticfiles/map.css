@@ -102,6 +102,11 @@ a{
   left: 690px;
 }
 
+#pacific-icon {
+  top: 400px;
+  left: 300px;
+}
+
 .location_map {
   line-height: 2;
   color: #315068;
