@@ -144,6 +144,11 @@ a{
   left: 380px;
 }
 
+#yellowriver-icon {
+  top: 455px;
+  left: 1050px;
+}
+
 .location_map {
   line-height: 2;
   color: #315068;
@@ -185,6 +190,10 @@ a{
 
 #America {
   background-image: url(Fossil.png);
+}
+
+#YellowRiver {
+  background-image: url(YellowRiver.png);
 }
 
 #location_text {
