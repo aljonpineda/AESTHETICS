@@ -86,10 +86,14 @@ class SecondHandler(webapp2.RequestHandler):
             self.response.write("<p>"+ idea.issue + "</p>")
             self.response.write("<em><p id='date'>submitted on " + str(idea.date)+"</p></em>"+"""<hr></div></div>""")
 
-
+class ThirdHandler(webapp2.RequestHandler):
+    def get(self):
+        template = env.get_template('templates/contactus.html')
+        self.response.out.write(template.render())
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/map', PostHandler),
-    ('/submissions', SecondHandler)
+    ('/submissions', SecondHandler),
+    ('/cactus', ThirdHandler)
 ], debug=True)
