@@ -67,7 +67,7 @@ h2 {
   color: white;
 }
 
-.icon:hover {
+.icon:hover{
   -webkit-animation: mover 1s infinite  alternate;
   animation: mover 1s infinite  alternate;
   position: absolute;
@@ -136,7 +136,7 @@ a{
 
 #pacific-icon {
   top: 450px;
-  left: 150px;
+  left: 250px;
 }
 
 #america-icon {
@@ -264,8 +264,14 @@ a{
 }
 
 .submissions {
+  position:relative;
   color: white;
+  font-size: 20px;
+  overflow: auto;
+  right:2px;
+  font-family: Drugs;
 }
+
 
 form {
   color: white;
@@ -331,4 +337,12 @@ p {
   text-align: left;
   color: black;
   font-family: LinLibertine;
+}
+
+p {
+  font-size: 13px;
+  overflow: auto;
+  text-indent: 20px;
+  color: white;
+  font-family: Drugs;
 }
