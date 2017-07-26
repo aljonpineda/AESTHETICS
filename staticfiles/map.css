@@ -107,6 +107,11 @@ a{
   left: 250px;
 }
 
+#america-icon {
+  top: 425px;
+  left: 500px;
+}
+
 .location_map {
   line-height: 2;
   color: #315068;
@@ -144,6 +149,10 @@ a{
 
 #Pacific {
   background-image: url(Pacific.png);
+}
+
+#America {
+  background-image: url(Fossil.png);
 }
 
 #location_text {
