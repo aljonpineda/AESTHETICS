@@ -64,7 +64,6 @@ h2 {
   position: absolute;
   text-decoration: none;
   z-index: 2;
-  color: white;
 }
 
 .icon:hover{
@@ -130,7 +129,7 @@ a{
 }
 
 #arctic-icon {
-  top: 100px;
+  top: 125px;
   left: 690px;
 }
 
