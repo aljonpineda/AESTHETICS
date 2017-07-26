@@ -78,7 +78,7 @@ class SecondHandler(webapp2.RequestHandler):
         self.reviewSubmissions()
 
     def reviewSubmissions(self):
-        user_idea = userSubmission.query().order(userSubmission.date).fetch()
+        user_idea = userSubmission.query().order(userSubmission.date).fetch(limit=3)
 
         for idea in user_idea:
             self.response.write(""" <div style="text-align: center;">
