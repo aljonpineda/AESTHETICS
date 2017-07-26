@@ -192,8 +192,8 @@ a{
   background-image: url(Fossil.png);
 }
 
-#YellowRiver {
-  background-image: url(YellowRiver.png);
+#Yellow {
+  background-image: url(Yellow.png);
 }
 
 #location_text {
@@ -244,8 +244,17 @@ a{
     letter-spacing: 3px;
 }
 
-.modal-body {
+.modal-body-container {
     padding: 2px 2px;
+}
+
+.modal-body {
+  font-size: 18px;
+  overflow: auto;
+  text-indent: 20px;
+  text-align: left;
+  color: black;
+  font-family: LinLibertine;
 }
 
 /* The Close Button */
@@ -328,15 +337,6 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #555555; /* Green */
   color: white;
-}
-
-p {
-  font-size: 18px;
-  overflow: auto;
-  text-indent: 20px;
-  text-align: left;
-  color: black;
-  font-family: LinLibertine;
 }
 
 p {
