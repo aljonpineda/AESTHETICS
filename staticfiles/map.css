@@ -65,7 +65,26 @@ h2 {
   text-decoration: none;
   z-index: 2;
   color: white;
+
 }
+.icon:hover{
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+  position: absolute;
+  text-decoration: none;
+  z-index: 2;
+  color: white;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
+
 
 a{
   text-decoration: none;
@@ -76,6 +95,11 @@ a{
   top: 590px;
   left: 500px;
 }
+
+
+
+
+
 
 #london-icon {
   top: 365px;
@@ -100,11 +124,6 @@ a{
 #arctic-icon {
   top: 100px;
   left: 690px;
-}
-
-#pacific-icon {
-  top: 450px;
-  left: 250px;
 }
 
 .location_map {
@@ -140,10 +159,6 @@ a{
 
 #Arctic {
   background-image: url(Arctic.png);
-}
-
-#Pacific {
-  background-image: url(Pacific.png);
 }
 
 #location_text {
@@ -226,7 +241,7 @@ form {
 
 #form_box {
   background-color: rgba(200,200,200,0.4);
-  padding: 5px 75px 40px 30px;
+  padding: 5px 75px 20px 30px;
   display: inline-block;
   text-align: left;
 }
@@ -240,38 +255,16 @@ input[type=text], textarea {
   width: 100%;
   outline: none;
   border-radius: 4px;
-  padding: 12px 20px;
 }
 
 input[type=text] {
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  padding: 12px 20px;
 }
 
 input[type=text]:focus {
-  border: 3px solid #555;
-}
-
-input[type=submit] {
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  background-color: white;
-  color: black;
-  border: 2px solid #555555;
-  border-radius: 4px;
-  text-align: center;
-  padding: 12px 12px;
-  cursor: pointer;
-  font-size: 14px;
-  margin-top: 10px;
-  font-family: Drugs;
-  font-weight: bold;
-  background-color: #e7e7e7;
-}
-
-input[type=submit]:hover {
-  background-color: #555555; /* Green */
-  color: white;
+    border: 3px solid #555;
 }
 
 p {
