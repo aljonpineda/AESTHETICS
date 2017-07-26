@@ -67,7 +67,7 @@ h2 {
   color: white;
 }
 
-.icon:hover{
+.icon:hover {
   -webkit-animation: mover 1s infinite  alternate;
   animation: mover 1s infinite  alternate;
   position: absolute;
