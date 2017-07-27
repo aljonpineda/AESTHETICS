@@ -359,3 +359,8 @@ p {
   color: white;
   font-family: Drugs;
 }
+
+.thanks {
+  background-image: url(ThankYou.png);
+  background-repeat: repeat-y;
+}
