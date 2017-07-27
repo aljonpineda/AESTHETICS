@@ -313,19 +313,19 @@ form {
   text-align: center;
 }
 
-input[type=text], textarea {
+input[type=text], input[type=email], textarea {
   width: 100%;
   outline: none;
   border-radius: 4px;
   padding: 12px 20px;
 }
 
-input[type=text] {
+input[type=text], input[type=email] {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-input[type=text]:focus {
+input[type=text]:focus, input[type=email]:focus {
   border: 3px solid #555;
 }
 
