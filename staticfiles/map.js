@@ -3,7 +3,7 @@ function exitModal() {
 }
 
 function showModal(topic) {
-  $("#" + topic + "_modal").animate({width: "toggle"});
+  $("#" + topic + "_modal").animate({height: "toggle"});
 }
 
 function showIssuesModal() {
