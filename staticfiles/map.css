@@ -106,47 +106,47 @@ a{
 }
 
 #brazil-icon {
-  top: 590px;
+  top: 605px;
   left: 500px;
 }
 
 #london-icon {
-  top: 365px;
+  top: 380px;
   left: 690px;
 }
 
 #delhi-icon {
-  top: 480px;
+  top: 495px;
   left: 945px;
 }
 
 #reef-icon {
-  top: 615px;
+  top: 630px;
   left: 1180px;
 }
 
 #sahara-icon {
-  top: 490px;
+  top: 505px;
   left: 720px;
 }
 
 #arctic-icon {
-  top: 125px;
+  top: 140px;
   left: 690px;
 }
 
 #pacific-icon {
-  top: 450px;
+  top: 465px;
   left: 200px;
 }
 
 #america-icon {
-  top: 425px;
+  top: 440px;
   left: 380px;
 }
 
 #yellowriver-icon {
-  top: 455px;
+  top: 470px;
   left: 1050px;
 }
 
@@ -203,7 +203,17 @@ a{
 
 .button {
   margin-top: 450px;
+  margin-right: 10px;
   width: 20em;
+  border: 2px solid gray;
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0.5);
+  transition-duration: 0.4s;
+  padding: 5px;
+}
+
+.button:hover {
+  background-color: darkgray;
 }
 
 .modal {
