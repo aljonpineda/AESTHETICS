@@ -1,3 +1,9 @@
+function tempStorage() {
+  debugger;
+  var climate = $("#climate_submission").val();
+  var env = $("#issue_submission").val();
+}
+
 function exitModal() {
   $(".modal").css({"display": "none"})
 }
@@ -32,6 +38,7 @@ function setup() {
   $("#climatebutton").click(showClimateModal);
   $(".close").click(exitModal);
   $(document).click(handleDocumentClick);
+  $("#ok_button").click(tempStorage);
 }
 
 

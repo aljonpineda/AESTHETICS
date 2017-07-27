@@ -82,10 +82,10 @@ class SecondHandler(webapp2.RequestHandler):
 
         for idea in user_idea:
             self.response.write(""" <div style="text-align: center;">
-            <div style="display: inline-block; text-align: left"><p id='name'>"""+ idea.name + " said...</p>")
-            self.response.write("<p>"+ idea.location + "</p>")
-            self.response.write("<p>"+ idea.climate + "</p>")
-            self.response.write("<p>"+ idea.issue + "</p>")
+            <div style="display: inline-block; text-align: left; white-space: pre-line;"><p id='name'>"""+ idea.name + " said...</p>")
+            self.response.write("<p style=\"text-indent:0px;\">" + idea.location + "<br>")
+            self.response.write(idea.climate + "<br>")
+            self.response.write(idea.issue + "</p>")
             self.response.write("<em><p id='date'>submitted on " + str(idea.date)+"</p></em>"+"""<hr></div></div>""")
 
 class ThirdHandler(webapp2.RequestHandler):
