@@ -364,3 +364,17 @@ p {
   background-image: url(ThankYou.png);
   background-repeat: repeat-y;
 }
+
+.about {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.about p {
+  font-size: 20px;
+  text-indent: 0px;
+}
+
+hr {
+  width: 50%;
+}
