@@ -102,9 +102,15 @@ class ThirdHandler(webapp2.RequestHandler):
                             date=datetime.datetime.utcnow().strftime("%a %b %d "))
         response.put()
 
+class FourthHandler(webapp2.RequestHandler):
+    def get(self):
+        template = env.get_template('templates/about.html')
+        self.response.out.write(template.render())
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/map', PostHandler),
     ('/submissions', SecondHandler),
-    ('/cactus', ThirdHandler)
+    ('/cactus', ThirdHandler),
+    ('/about', FourthHandler)
 ], debug=True)
